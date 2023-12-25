@@ -7,6 +7,7 @@ import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -42,7 +43,7 @@ const HomeScreen = () => {
           </Row>
           
           
-
+          <SpeedInsights/> 
           <h4 className='fw-bold'>Newest Items</h4>
           <Row>
             {data.products.map((product) => (
