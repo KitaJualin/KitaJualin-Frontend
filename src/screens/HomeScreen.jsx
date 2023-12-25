@@ -7,7 +7,7 @@ import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
-import { SpeedInsights } from "@vercel/speed-insights"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
